@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Tawfiq Mahumud Khan | SolidWorks Portfolio</title>
+  <meta name="description"
+        content="SolidWorks portfolio of Tawfiq Mahumud Khan, a CSWA certified designer showcasing 3D modelling, surfacing, weldments, and mould design projects." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%234f8bff'/><text x='16' y='22' font-family='Inter,sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='white'>T</text></svg>" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" aria-label="Primary">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand">
+        <span class="nav__brand-mark">T</span>
+        <span>Tawfiq M. Khan</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+      <ul class="nav__links" id="primary-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <span class="hero__eyebrow">
+            <span class="dot"></span>
+            SolidWorks · Available for contact
+          </span>
+          <h1 class="hero__title">
+            <span class="hero__title-text">Tawfiq Mahumud Khan</span>
+          </h1>
+          <p class="hero__subtitle">
+            Mechatronics engineer passionate about mechanical design. I build
+            <strong>2D &amp; 3D parts, surfacing, weldments and moulds</strong>
+            in SolidWorks, from the first sketch to a finished, manufacturable model.
+          </p>
+          <div class="hero__cta-row">
+            <a href="#projects" class="btn btn--primary">View Projects &rarr;</a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          </div>
+
+          <div class="skills" id="skills">
+            <a class="skill" href="#projects" data-skill="2d-sketching">
+              <span class="skill__icon">2D</span>
+              2D Sketching
+            </a>
+            <a class="skill" href="#projects" data-skill="3d-sketching">
+              <span class="skill__icon">3D</span>
+              3D Sketching
+            </a>
+            <a class="skill" href="#projects" data-skill="surfacing">
+              <span class="skill__icon">⌬</span>
+              Surfacing
+            </a>
+            <a class="skill" href="#projects" data-skill="weldments">
+              <span class="skill__icon">⫶</span>
+              Weldments
+            </a>
+            <a class="skill" href="#projects" data-skill="molding">
+              <span class="skill__icon">▣</span>
+              Molding
+            </a>
+            <a class="skill skill--cert" href="certificate.html" data-skill="cswa">
+              <span class="skill__icon">✓</span>
+              CSWA Certified
+            </a>
+          </div>
+        </div>
+
+        <figure class="hero__portrait" aria-hidden="true">
+          <img src="projects/my_pic.jpg" alt="" />
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section id="about" class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__eyebrow">About</span>
+        <h2 class="section-title">Designer first, engineer by habit.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-grid__lead">
+          <p class="about-lede">
+            I'm a mechatronics engineer who designs parts and products in SolidWorks.
+            I care about how a thing looks, how it fits together, and how it's made,
+            and I like solving real problems with clean geometry. Most of my work
+            sits at the intersection of mechanical design and manufacturing, where
+            small modelling decisions turn into real gains on the shop floor.
+          </p>
+          <p class="about-lede">
+            I'm <strong>CSWA certified</strong> and every project on this site was
+            modelled by me. Click any project to inspect the parts, spin the STL
+            in 3D, or grab the source files.
+          </p>
+        </div>
+
+        <ul class="about-stats">
+          <li class="about-stat">
+            <span class="about-stat__num">BSc</span>
+            <span class="about-stat__label">Mechatronics Engineering</span>
+          </li>
+          <li class="about-stat">
+            <span class="about-stat__num">CSWA</span>
+            <span class="about-stat__label">Certified SolidWorks Associate</span>
+          </li>
+          <li class="about-stat">
+            <span class="about-stat__num">100%</span>
+            <span class="about-stat__label">Modelled from scratch</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+       ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__eyebrow">Portfolio</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">
+          Hover (or tap) any project to reveal the full preview. Each project includes
+          individual component renders and an interactive 3D STL viewer.
+        </p>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Filled by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-header__eyebrow">Contact</span>
+        <h2 class="section-title">Get in touch.</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Email — opens Gmail compose in a new tab. Gmail web is the
+             universal mailto-to-Gmail bridge for desktop users; on mobile
+             the system mail handler takes over via mailto:. -->
+        <a class="contact-card contact-card--email"
+           id="contact-email"
+           href="https://mail.google.com/mail/?view=cm&fs=1&to=itstawfiq077@gmail.com"
+           target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                 stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </span>
+          <span class="contact-card__body">
+            <span class="contact-card__label">Email</span>
+            <span class="contact-card__value">itstawfiq077@gmail.com</span>
+          </span>
+          <span class="contact-card__cta" aria-hidden="true">Open Gmail &rarr;</span>
+        </a>
+
+        <!-- GitHub — opens the profile in a new tab. -->
+        <a class="contact-card contact-card--github"
+           id="contact-github"
+           href="https://github.com/its-Tawfiq"
+           target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.34-1.27-1.7-1.27-1.7-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.68 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.45.11-3.02 0 0 .97-.31 3.18 1.17.92-.26 1.91-.39 2.89-.39.98 0 1.97.13 2.89.39 2.2-1.48 3.17-1.17 3.17-1.17.63 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.08 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.13v3.16c0 .31.21.67.8.55C20.22 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/>
+            </svg>
+          </span>
+          <span class="contact-card__body">
+            <span class="contact-card__label">GitHub</span>
+            <span class="contact-card__value">github.com/its-Tawfiq</span>
+          </span>
+          <span class="contact-card__cta" aria-hidden="true">View profile &rarr;</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a class="contact-card contact-card--linkedin"
+           id="contact-linkedin"
+           href="https://www.linkedin.com/in/tawfiq-mahmud-khan"
+           target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.86 3.37-1.86 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+            </svg>
+          </span>
+          <span class="contact-card__body">
+            <span class="contact-card__label">LinkedIn</span>
+            <span class="contact-card__value">linkedin.com/in/tawfiq-mahmud-khan</span>
+          </span>
+          <span class="contact-card__cta" aria-hidden="true">View profile &rarr;</span>
+        </a>
+
+        <!-- Facebook -->
+        <a class="contact-card contact-card--facebook"
+           id="contact-facebook"
+           href="https://www.facebook.com/Eshan.mech.07"
+           target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.02H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.57v1.88h2.78l-.45 2.91h-2.33V22c4.78-.8 8.43-4.94 8.43-9.93z"/>
+            </svg>
+          </span>
+          <span class="contact-card__body">
+            <span class="contact-card__label">Facebook</span>
+            <span class="contact-card__value">facebook.com/Eshan.mech.07</span>
+          </span>
+          <span class="contact-card__cta" aria-hidden="true">View profile &rarr;</span>
+        </a>
+
+        <!-- WhatsApp / Mobile — wa.me opens the WhatsApp app on mobile
+             and WhatsApp Web on desktop. -->
+        <a class="contact-card contact-card--whatsapp"
+           id="contact-whatsapp"
+           href="https://wa.me/01876894750"
+           target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.9-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3 1.7.7 2.4.8 3.3.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5-1.3c1.5.8 3.1 1.3 5 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3C3.4 14.8 3 13.4 3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9z"/>
+            </svg>
+          </span>
+          <span class="contact-card__body">
+            <span class="contact-card__label">WhatsApp · Mobile</span>
+            <span class="contact-card__value">+8801 876 894 750</span>
+          </span>
+          <span class="contact-card__cta" aria-hidden="true">Open chat &rarr;</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p style="margin:0;">
+        &copy; <span id="year"></span> Tawfiq Mahumud Khan &middot; Built with SolidWorks &amp; clean HTML
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Footer year is the only thing kept dynamic — contact info is now
+    // authored directly in the markup above so the page works even
+    // without JS.
+    (function () {
+      const yr = document.getElementById('year');
+      if (yr) yr.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

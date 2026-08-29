@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Project | Tawfiq Mahumud Khan | SolidWorks Portfolio</title>
+  <meta name="description"
+        content="A detailed SolidWorks project, components, 3D STL viewer, and downloadable source files." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%234f8bff'/><text x='16' y='22' font-family='Inter,sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='white'>T</text></svg>" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" aria-label="Primary">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__brand-mark">T</span>
+        <span>Tawfiq M. Khan</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+      <ul class="nav__links" id="primary-nav">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       PROJECT DETAIL (filled by main.js)
+       ============================================================ -->
+  <main id="project-detail" class="container" data-project="">
+    <!-- Filled dynamically by js/main.js -->
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p style="margin:0;">
+        &copy; <span id="year"></span> Tawfiq Mahumud Khan &middot; Built with SolidWorks &amp; clean HTML
+      </p>
+    </div>
+  </footer>
+
+  <!-- Three.js for in-browser STL preview.
+       Loaded as classic scripts in the page's main context so that
+       subsequent fetch() calls to local STL files are SAME-ORIGIN
+       (no CORS blocking). The old <model-viewer> approach failed
+       because it was hosted on unpkg.com and tried to fetch local
+       files from inside a cross-origin worker context.
+       Three.js r128 is the last release that ships the legacy
+       non-module build we need for this single-script pattern. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+
+  <!-- App scripts -->
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Footer year
+    (function () {
+      const yr = document.getElementById('year');
+      if (yr) yr.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
